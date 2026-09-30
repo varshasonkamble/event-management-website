@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Events - Event Management</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Dream<span>Events</span></div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Book Now</a></li>
+            </ul>
+
+            <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Make Your Events <span>Unforgettable</span></h1>
+
+            <p>
+                We organize beautiful weddings, birthdays, corporate events
+                and special celebrations.
+            </p>
+
+            <a href="#contact" class="btn">Plan Your Event</a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <p class="section-text">
+            Everything you need to make your event special.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">💍</div>
+                <h3>Wedding Events</h3>
+                <p>
+                    Complete wedding planning, decoration, catering and
+                    entertainment services.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎂</div>
+                <h3>Birthday Parties</h3>
+                <p>
+                    Theme-based birthday decorations, cakes, games and
+                    entertainment.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">💼</div>
+                <h3>Corporate Events</h3>
+                <p>
+                    Professional conferences, seminars, meetings and
+                    corporate parties.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎊</div>
+                <h3>Other Functions</h3>
+                <p>
+                    Anniversary, engagement, baby shower and other
+                    special celebrations.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Packages -->
+    <section id="packages" class="section packages">
+        <h2>Event Packages</h2>
+        <p class="section-text">
+            Choose a package that fits your requirements.
+        </p>
+
+        <div class="package-container">
+
+            <div class="package">
+                <h3>Basic</h3>
+                <h4>₹15,000</h4>
+
+                <ul>
+                    <li>Basic Decoration</li>
+                    <li>Event Planning</li>
+                    <li>Sound System</li>
+                    <li>4 Hours Service</li>
+                </ul>
+
+                <a href="#contact" class="btn">Choose Package</a>
+            </div>
+
+            <div class="package popular">
+                <div class="badge">Popular</div>
+
+                <h3>Premium</h3>
+                <h4>₹35,000</h4>
+
+                <ul>
+                    <li>Premium Decoration</li>
+                    <li>Complete Event Planning</li>
+                    <li>DJ & Sound System</li>
+                    <li>Photography</li>
+                    <li>8 Hours Service</li>
+                </ul>
+
+                <a href="#contact" class="btn">Choose Package</a>
+            </div>
+
+            <div class="package">
+                <h3>Luxury</h3>
+                <h4>₹75,000</h4>
+
+                <ul>
+                    <li>Luxury Decoration</li>
+                    <li>Full Event Management</li>
+                    <li>DJ & Live Music</li>
+                    <li>Photography & Videography</li>
+                    <li>Catering</li>
+                    <li>Full Day Service</li>
+                </ul>
+
+                <a href="#contact" class="btn">Choose Package</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+        <h2>Our Gallery</h2>
+        <p class="section-text">
+            Some memorable moments from our events.
+        </p>
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552"
+                     alt="Wedding Event">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3"
+                     alt="Wedding Decoration">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d"
+                     alt="Birthday Party">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde"
+                     alt="Party">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30"
+                     alt="Corporate Event">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865"
+                     alt="Event">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact / Booking Form -->
+    <section id="contact" class="section contact">
+        <h2>Book Your Event</h2>
+
+        <p class="section-text">
+            Fill out the form and our team will contact you.
+        </p>
+
+        <form id="bookingForm">
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <small id="nameError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <small id="emailError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter 10-digit phone number">
+                <small id="phoneError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="eventType">Event Type</label>
+
+                <select id="eventType">
+                    <option value="">Select Event</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Corporate">Corporate Event</option>
+                    <option value="Engagement">Engagement</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <small id="eventError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Event Date</label>
+                <input type="date" id="date">
+                <small id="dateError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" placeholder="Number of guests">
+                <small id="guestsError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Additional Requirements</label>
+                <textarea id="message" rows="5"
+                    placeholder="Tell us about your event"></textarea>
+            </div>
+
+            <button type="submit" class="btn submit-btn">
+                Submit Enquiry
+            </button>
+
+            <p id="successMessage"></p>
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+
+            <h2>Dream<span>Events</span></h2>
+
+            <p>
+                Making your special moments unforgettable.
+            </p>
+
+            <div class="social">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">WhatsApp</a>
+            </div>
+
+            <p class="copyright">
+                © 2026 Dream Events. All Rights Reserved.
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
